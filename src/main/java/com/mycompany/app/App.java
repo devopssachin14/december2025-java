@@ -1,10 +1,16 @@
-package com.mycompany.app;
+import java.util.Scanner;
 
-/**
- * Hello world!
- */
-public class App {
+public class EvenOddCheck {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int number = scanner.nextInt();
+        scanner.close();
+
+        if (number % 2 == 0) {
+            System.out.println(number + " is an even number.");
+        } else {
+            System.out.println(number + " is an odd number.");
+        }
     }
 }

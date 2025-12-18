@@ -1,16 +1,12 @@
-import java.util.Scanner;
-
-public class EvenOddCheck {
+public class Factorial {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter an integer: ");
-        int number = scanner.nextInt();
-        scanner.close();
+        int number = 5;
+        long factorial = 1;
 
-        if (number % 2 == 0) {
-            System.out.println(number + " is an even number.");
-        } else {
-            System.out.println(number + " is an odd number.");
+        for (int i = 1; i <= number; ++i) {
+            factorial *= i; // Equivalent to factorial = factorial * i;
         }
+
+        System.out.println("Factorial of " + number + " is: " + factorial);
     }
 }
